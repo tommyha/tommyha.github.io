@@ -1,15 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
     <title>Hello world!</title>
-  </head>
-  <body>
+    <meta name="description" content="A pure HTML example, without dependencies." />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container">
+        <hgroup>
+            <h1>Pico</h1>
+            <p>A pure HTML example, without dependencies.</p>
+        </hgroup>
+        <nav>
+            <ul>
+                <li>
+                    <details class="dropdown">
+                        <summary role="button" class="secondary">Theme</summary>
+                        <ul>
+                            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                            <li><a href="#" data-theme-switcher="light">Light</a></li>
+                            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ./ Header -->
+
+    <!-- Main -->
     <main class="container">
-      <h1>Hello world!</h1>
+        <h1>Hello world!</h1>
+        <!-- Typography-->
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>
+                Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget efficitur feugiat.
+                Vivamus porta nunc a erat mattis, mattis feugiat turpis pretium. Quisque sed tristique
+                felis.
+            </p>
+
+            <!-- Headings-->
+            <h3>Heading 3</h3>
+            <p>
+                Integer bibendum malesuada libero vel eleifend. Fusce iaculis turpis ipsum, at efficitur
+                sem scelerisque vel. Aliquam auctor diam ut purus cursus fringilla. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <h4>Heading 4</h4>
+            <p>
+                Cras fermentum velit vitae auctor aliquet. Nunc non congue urna, at blandit nibh. Donec ac
+                fermentum felis. Vivamus tincidunt arcu ut lacus hendrerit, eget mattis dui finibus.
+            </p>
+            <h5>Heading 5</h5>
+            <p>
+                Donec nec egestas nulla. Sed varius placerat felis eu suscipit. Mauris maximus ante in
+                consequat luctus. Morbi euismod sagittis efficitur. Aenean non eros orci. Vivamus ut diam
+                sem.
+            </p>
+            <h6>Heading 6</h6>
+            <p>
+                Ut sed quam non mauris placerat consequat vitae id risus. Vestibulum tincidunt nulla ut
+                tortor posuere, vitae malesuada tortor molestie. Sed nec interdum dolor. Vestibulum id
+                auctor nisi, a efficitur sem. Aliquam sollicitudin efficitur turpis, sollicitudin
+                hendrerit ligula semper id. Nunc risus felis, egestas eu tristique eget, convallis in
+                velit.
+            </p>
+
     </main>
-  </body>
+    <!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer class="container">
+        <small>Built with <a href="https://picocss.com">Pico</a> •
+            <a href="https://github.com/picocss/examples/blob/master/v2-html/index.html">Source code</a></small>
+    </footer>
+    <!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+    <script src="js/minimal-theme-switcher.js"></script>
+
+    <!-- Modal -->
+    <script src="js/modal.js"></script>
+</body>
+
 </html>
